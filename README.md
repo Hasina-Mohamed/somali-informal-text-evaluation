@@ -54,6 +54,16 @@ A separate text-based screening rule flagged possible instruction-following fail
 - `somali_model_screening_summary.csv` — Preliminary heuristic screening counts.
 - `human_evaluation_ratings.csv` — Human judgments for the 76 unique model/input predictions. Rows are keyed by comment ID, model, and input type.
 
+
+## Paired original-versus-normalized comparison
+
+The 19 comments were evaluated in both forms for each model. Comparing the human labels for each same comment:
+
+- **Qwen3-1.7B:** all 19 paired labels stayed the same (17 Incorrect → Incorrect; 2 Partially correct → Partially correct).
+- **Qwen2.5-3B-Instruct:** 18 paired labels stayed the same (16 Incorrect → Incorrect; 1 Partially correct → Partially correct; 1 Correct → Correct). One comment changed from Incorrect on the original input to Partially correct on the normalized input.
+
+No comment changed to a higher category than Partially correct, and the overall Correct count did not increase after normalization. With only 19 examples, these results are exploratory and do not establish that normalization has no benefit generally.
+
 ## Limitations
 
 - The pilot includes only 19 comments and is not representative of all Somali dialects, platforms, or topics.
