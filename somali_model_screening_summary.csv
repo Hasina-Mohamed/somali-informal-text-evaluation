@@ -1,0 +1,9 @@
+﻿Model,Input_Type,Screening Flag,Count
+Qwen2.5-3B-Instruct,Normalized,Likely non-translation / uncertainty,13
+Qwen2.5-3B-Instruct,Normalized,Manual review required,6
+Qwen2.5-3B-Instruct,Original,Likely non-translation / uncertainty,16
+Qwen2.5-3B-Instruct,Original,Manual review required,3
+Qwen3-1.7B,Normalized,Likely non-translation / uncertainty,14
+Qwen3-1.7B,Normalized,Manual review required,5
+Qwen3-1.7B,Original,Likely non-translation / uncertainty,14
+Qwen3-1.7B,Original,Manual review required,5
